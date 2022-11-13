@@ -1,0 +1,183 @@
+<!DOCTYPE html><html><head><style>pre{white-space:pre-wrap;}pre::before{counter-reset:listing;}code{counter-increment:listing;text-align:left;float:left;clear:left;margin-left:4em;margin-bottom:1em;}code::before{content:counter(listing) ". ";display:block;float:left;text-align:right;width:4em;margin-left:-4em;}code > br{display:none;}</style></head><body><pre class="code">
+<code>ERROR:root:Command failed
+Traceback (most recent call last):
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code><br><code>ERROR:telethon.client.updates:Unhandled exception on handle_command
+Traceback (most recent call last):
+  File &quot;/app/.heroku/python/lib/python3.9/site-packages/telethon/client/updates.py&quot;, line 467, in _dispatch_update
+    await callback(event)
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 175, in handle_command
+    raise e
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code><br><code>ERROR:friendly-telegram.modules.loader:Loading external module failed.
+Traceback (most recent call last):
+  File &quot;/app/friendly-telegram/modules/loader.py&quot;, line 222, in load_module
+    instance = self.allmodules.register_module(spec, module_name)
+  File &quot;/app/friendly-telegram/loader.py&quot;, line 185, in register_module
+    spec.loader.exec_module(module)
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 790, in exec_module
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 228, in _call_with_frames_removed
+  File &quot;https://heta.hikariatama.ru/hikariatama/ftg/musicdl.py&quot;, line 39, in &lt;module&gt;
+    class MusicDLMod(loader.Module):
+  File &quot;https://heta.hikariatama.ru/hikariatama/ftg/musicdl.py&quot;, line 61, in MusicDLMod
+    @loader.command(ru_doc=&quot;&lt;название&gt; - Скачать песню&quot;)
+AttributeError: module &#x27;friendly-telegram.loader&#x27; has no attribute &#x27;command&#x27;</code><br><code>ERROR:friendly-telegram.modules.loader:Loading external module failed.
+Traceback (most recent call last):
+  File &quot;/app/friendly-telegram/modules/loader.py&quot;, line 222, in load_module
+    instance = self.allmodules.register_module(spec, module_name)
+  File &quot;/app/friendly-telegram/loader.py&quot;, line 185, in register_module
+    spec.loader.exec_module(module)
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 790, in exec_module
+  File &quot;&lt;frozen importlib._bootstrap&gt;&quot;, line 228, in _call_with_frames_removed
+  File &quot;https://heta.hikariatama.ru/hikariatama/ftg/musicdl.py&quot;, line 39, in &lt;module&gt;
+    class MusicDLMod(loader.Module):
+  File &quot;https://heta.hikariatama.ru/hikariatama/ftg/musicdl.py&quot;, line 61, in MusicDLMod
+    @loader.command(ru_doc=&quot;&lt;название&gt; - Скачать песню&quot;)
+AttributeError: module &#x27;friendly-telegram.loader&#x27; has no attribute &#x27;command&#x27;</code><br><code>ERROR:root:Command failed
+Traceback (most recent call last):
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code><br><code>ERROR:telethon.client.updates:Unhandled exception on handle_command
+Traceback (most recent call last):
+  File &quot;/app/.heroku/python/lib/python3.9/site-packages/telethon/client/updates.py&quot;, line 467, in _dispatch_update
+    await callback(event)
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 175, in handle_command
+    raise e
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code><br><code>ERROR:friendly-telegram.modules.loader:Loading external module failed.
+Traceback (most recent call last):
+  File &quot;/app/friendly-telegram/modules/loader.py&quot;, line 222, in load_module
+    instance = self.allmodules.register_module(spec, module_name)
+  File &quot;/app/friendly-telegram/loader.py&quot;, line 185, in register_module
+    spec.loader.exec_module(module)
+  File &quot;&lt;frozen importlib._bootstrap_external&gt;&quot;, line 786, in exec_module
+  File &quot;/app/friendly-telegram/modules/loader.py&quot;, line 52, in get_code
+    return compile(source, self.origin, &quot;exec&quot;, dont_inherit=True)
+  File &quot;&lt;string&gt;&quot;, line 1
+    &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;pre{white-space:pre-wrap;}pre::before{counter-reset:listing;}code{counter-increment:listing;text-align:left;float:left;clear:left;margin-left:4em;margin-bottom:1em;}code::before{content:counter(listing) &quot;. &quot;;display:block;float:left;text-align:right;width:4em;margin-left:-4em;}code &gt; br{display:none;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;pre class=&quot;code&quot;&gt;
+    ^
+SyntaxError: invalid syntax</code><br><code>ERROR:root:Command failed
+Traceback (most recent call last):
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code><br><code>ERROR:telethon.client.updates:Unhandled exception on handle_command
+Traceback (most recent call last):
+  File &quot;/app/.heroku/python/lib/python3.9/site-packages/telethon/client/updates.py&quot;, line 467, in _dispatch_update
+    await callback(event)
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 175, in handle_command
+    raise e
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code><br><code>ERROR:root:Command failed
+Traceback (most recent call last):
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code><br><code>ERROR:telethon.client.updates:Unhandled exception on handle_command
+Traceback (most recent call last):
+  File &quot;/app/.heroku/python/lib/python3.9/site-packages/telethon/client/updates.py&quot;, line 467, in _dispatch_update
+    await callback(event)
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 175, in handle_command
+    raise e
+  File &quot;/app/friendly-telegram/dispatcher.py&quot;, line 162, in handle_command
+    await func(message)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 44, in basscmd
+    audio = await get_audio(self, m, &quot;BassBoost&quot;)
+  File &quot;https://raw.githubusercontent.com/diademma/ftg-/main/AudioEditor&quot;, line 239, in get_audio
+    ae.audio = AudioSegment.from_file(
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/audio_segment.py&quot;, line 728, in from_file
+    info = mediainfo_json(orig_file, read_ahead_limit=read_ahead_limit)
+  File &quot;/app/.local/lib/python3.9/site-packages/pydub/utils.py&quot;, line 274, in mediainfo_json
+    res = Popen(command, stdin=stdin_parameter, stdout=PIPE, stderr=PIPE)
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File &quot;/app/.heroku/python/lib/python3.9/subprocess.py&quot;, line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: &#x27;ffprobe&#x27;</code>
+</pre></body></html>
