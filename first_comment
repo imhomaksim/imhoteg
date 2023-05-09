@@ -2,7 +2,7 @@ import logging
 from telethon.tl.types import Message
 from .. import loader, utils
 
-# meta developer: @minimaxno
+# meta developer: @imhomaksim
 # meta pic: https://img.icons8.com/emoji/344/bullseye.png
 
 def getnum(list: list, needle: str) -> int:
@@ -21,8 +21,8 @@ class FirstOneMFMod(loader.Module):
         'ans?': '😡 <b>Must be an answer to channel or comment.</b>'}
     strings_ru = {
         'name': 'First one, mother***er!',
-        'on': '⬆️ <b>Первонах включен.</b>',
-        'off': '⬇️ <b>Первонах выключен.</b>',
+        'on': '⬆️ <b>ezezez.</b>',
+        'off': '⬇️ <b>so sad.</b>',
         'args?': '😕 <b>Жопа съела аргументы?</b>',
         'ans?': '😡 <b>Должно быть ответом на автосообщение канала или комментом.</b>'
     }
